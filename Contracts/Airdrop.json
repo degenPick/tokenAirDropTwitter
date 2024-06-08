@@ -1,0 +1,27 @@
+{
+    "name": "AirdropSPLTokens",
+    "description": "Smart contract for airdropping SPL tokens to multiple wallet addresses on the Solana network",
+    "program": "solana-program",
+    "instructions": [
+      {
+        "type": "initialize",
+        "inputs": {
+          "tokenProgramId": "tokenProgramId",
+          "mintAddress": "mintAddress",
+          "airdropAmount": "100",
+          "recipientAddresses": ["recipientAddress1", "recipientAddress2", "recipientAddress3"],
+          "signature": "signature"
+        }
+      },
+      {
+        "type": "executeAirdrop",
+        "inputs": {
+          "tokenProgramId": "tokenProgramId",
+          "mintAddress": "mintAddress",
+          "airdropAmount": "100",
+          "recipientAddresses": ["recipientAddress1", "recipientAddress2", "recipientAddress3"],
+          "signature": "signature"
+        }
+      }
+    ]
+  }
